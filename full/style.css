@@ -1,0 +1,492 @@
+@import url(css/reset.css);
+
+@font-face {
+    font-family: GE_SS;
+    src: url(fonts/GE_SS_Two_Medium.otf);
+}
+
+body {
+    font-family: GE_SS;
+    background: #333;
+    color: #333;
+    min-height: 800px;
+}
+
+header {
+    width: 100%;
+    height: 160px;
+    background: url(images/header.png) repeat-x;
+}
+
+div#headers {
+    width: 960px;
+    margin: 0px auto;
+    position: relative;
+}
+
+div#logo {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+}
+
+form#search {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+
+#search-submit {
+    width: 35px;
+    height: 35px;
+    background: url(images/search-btn.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+#search-box {
+    width: 150px;
+    height: 33px;
+    background: url(images/search-bg.png) no-repeat;
+    border: 1px solid #ccc;
+    border-left: 1px solid #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: -3px;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    background: url(images/nav.png) repeat-x;
+}
+
+div#navs {
+    width: 960px;
+	height: 40px;
+    margin:  0px auto;
+    position: relative;
+}
+
+div#list {
+    float: right;
+}
+
+#home {
+    float: right;
+    margin-left: 5px;
+}
+
+div#list ul {
+    width: 690px;
+    float: left;
+    margin-top: 9px;
+}
+
+div#list ul li {
+    display: inline;
+    float: right;
+}
+
+div#list ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 9px;
+    font-size: 16px;
+}
+
+div#list ul li a:hover {
+    background: linear-gradient(#333, #000);
+}
+
+#register-btn {
+    width: 198px;
+    height: 36px;
+    background: url(images/register-btn.png) no-repeat;
+    float: left;
+    border: none;
+    cursor: pointer;
+}
+
+div#container {
+    width: 1000px;
+    background: #fff;
+    margin: 0px auto;
+    padding-top: 25px;
+}
+
+div#containers {
+    width: 960px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+div#content {
+    width: 660px;
+    float: right;
+    min-height: 500px;
+}
+
+div#register {
+    width: 660px;
+    height: 420px;
+    background: #e5e5e5;
+    border-bottom: 1px solid #ccc;
+    margin-top: 25px;
+    position: relative;
+    display: none;
+}
+
+#close {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+div#register h1 {
+    font-size: 24px;
+    color: #069;
+    position: absolute;
+    top: 28px;
+    right: 85px;
+}
+
+div#register form {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    direction: rtl;
+}
+
+.input-title {
+    font-size: 18px;
+    color: #333;
+    padding-left: 50px;
+}
+
+.register-input {
+    width: 250px;
+    height: 35px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.input-title, .register-input {
+    margin-bottom: 5px;
+}
+
+#register-submit {
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+    background: url(images/register-submit.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+div#slideshow {
+    width: 660px;
+    height: 220px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 25px;
+}
+
+div#slider {
+    position: relative;
+}
+
+#prev {
+    position: absolute;
+    top: 95px;
+    left: 10px;
+}
+
+#next {
+    position: absolute;
+    top: 95px;
+    right: 10px;
+}
+
+div#posts {
+    width: 660px;
+}
+
+div.post {
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+div.post-content {
+    width: 100%;
+    height: 200px;
+    direction: rtl;
+}
+
+div.post-title {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+div.post-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+div.post-title a:hover {
+    color: #069;
+}
+
+div.post-thumb {
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin-left: 10px;
+}
+
+div.post-meta {
+    width: 100%;
+    height: 23px;
+    color: #069;
+    font-size: 12px;
+}
+
+div.right-info {
+    float: right;
+}
+
+div.left-info {
+    float: left;
+}
+
+div.right-info a, div.left-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+div.post-topic {
+    width: 100%;
+    height: 127px;
+    color: #333;
+    text-align: justify;
+}
+
+.read-more {
+    color: #069;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+div#pages {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#next-page {
+    color: #069;
+    text-decoration: none;
+    float: right;
+}
+
+#last-page {
+    color: #069;
+    text-decoration: none;
+    float: left;
+}
+
+div#sidebar {
+    width: 280px;
+    min-height: 500px;
+    float: left;
+}
+
+div#login h1 {
+    width: 280px;
+    height: 47px;
+    background: url(images/sidebar.png) no-repeat;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    color: #fff;
+}
+
+form#login-form {
+    width: 240px;
+    min-height: 205px;
+    background: #e5e5e5;
+    margin: 0px auto;
+}
+
+#email {
+    width: 200px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    background: url(images/email.png) no-repeat;
+}
+
+#password {
+    width: 200px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: 20px;
+    margin-top: -1px;
+    text-align: center;
+    background: url(images/password.png) no-repeat;
+}
+
+#login-submit {
+    width: 150px;
+    height: 35px;
+    background: url(images/login.png) no-repeat;
+    border: none;
+    margin-top: 10px;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+#login-helper {
+    margin-top: 20px;
+    font-size: 14px;
+    margin-left: 45px;
+}
+
+#forgot-password, #register-link {
+    color: #069;
+    text-decoration: none;
+}
+
+#register-link {
+    margin-left: 15px;
+}
+
+div.block h1 {
+    width: 280px;
+    height: 47px;
+    background: url(images/sidebar.png) no-repeat;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    color: #fff;
+}
+
+div.block div {
+    width: 240px;
+    min-height: 205px;
+    background: #e5e5e5;
+    margin: 0px auto;
+}
+
+div.block div ul {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+div.block div ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+div.block div ul li a:hover {
+    color: #069;
+}
+
+footer {
+    width: 1000px;
+    height: 200px;
+    background: #fff;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+div#footers {
+    width: 960px;
+    height: 175px;
+    background: url(images/footer.png) repeat-x;
+    margin: 0px auto;
+    position: relative;
+}
+
+div#contact {
+    width: 205px;
+    height: 118px;
+    position: absolute;
+    top: 25px;
+    right: 150px;
+}
+
+div#contact h1 {
+    font-size: 24px;
+    color: #069;
+    text-align: center;
+}
+
+div#contact ul {
+    margin-top: 20px;
+}
+
+div#contact ul li {
+    display: inline;
+    float: right;
+}
+
+div#about {
+    width: 290px;
+    height: 118px;
+    position: absolute;
+    top: 25px;
+    left: 150px;
+}
+
+div#about h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #069;
+    font-size: 24px;
+}
+
+div#about p {
+    float: right;
+    direction: rtl;
+    text-align: justify;
+}
+
+div#lower-footer {
+    width: 960px;
+    height: 25px;
+    background: url(images/lower-footer.png) repeat-x;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+div#copyright {
+    position: absolute;
+    top: 5px;
+    left: 395px;
+    font-size: 12px;
+    color: #fff;
+}
+
+div#web-designer {
+    position: absolute;
+    left: 40px;
+}
